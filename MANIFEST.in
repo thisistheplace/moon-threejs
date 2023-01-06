@@ -1,0 +1,11 @@
+include moon_threejs/moon_threejs.min.js
+include moon_threejs/moon_threejs.min.js.map
+include moon_threejs/async-*.js
+include moon_threejs/async-*.js.map
+include moon_threejs/*-shared.js
+include moon_threejs/*-shared.js.map
+include moon_threejs/metadata.json
+include moon_threejs/package-info.json
+include README.md
+include LICENSE
+include package.json
