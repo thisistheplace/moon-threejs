@@ -8,7 +8,8 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
-            value: ''
+            id: "test",
+            radius: 500
         };
         this.setProps = this.setProps.bind(this);
     }
