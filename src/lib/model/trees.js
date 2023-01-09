@@ -26,21 +26,14 @@ void main() {
 
 const FragmentShader = `precision highp float;
 void main() {
-  gl_FragColor = vec4(0.0, 0.0, 0.0, 0.0);
+  gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
 }
 `
 
-function growForest(radius){
+function growForest(radius, nforests, ntrees, height){
   const trees = []
-  // for number of random trees
-  const nforests = 3;
   // rough spacing of trees
-  // for the sphere this needs to be at least 90
   const scale = 45;
-  // number of trees
-  var ntrees = 1000;
-  // initial tree height
-  var height = 6
   // initial tree diameter
   var diameter = 0.5
   // forest depth
@@ -57,7 +50,7 @@ function growForest(radius){
   const randz = Array.apply(null, {length: ntrees * nforests}).map(Function.call, Math.random)
   const allz = randz.map(z => z * scale * (Math.random() < 0.5 ? -1 : 1))
   // standard material, just used for mesh generation
-  const material = new THREE.LineBasicMaterial( { color: 0x000000, opacity: 0.8} );
+  const material = new THREE.LineBasicMaterial();
   // instanced material!
   var mat = new THREE.RawShaderMaterial({
     uniforms: {},

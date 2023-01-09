@@ -9,6 +9,9 @@ extend({THREE})
 const Forest = (props) => {
   const ref = useRef()
   const [radius, setRadius] = useState(props.radius)
+  const [nforests, setNForests] = useState(props.nforests)
+  const [ntrees, setNTrees] = useState(props.ntrees)
+  const [height, setHeight] = useState(props.height)
 
   useFrame((state, delta) => {
     if (!ref.current) return
@@ -17,7 +20,7 @@ const Forest = (props) => {
   })
 
   useEffect(()=>{
-    growForest(radius).forEach(tree => {
+    growForest(radius, nforests, ntrees, height).forEach(tree => {
       ref.current.add(tree)
     })
   }, [radius])

@@ -9,7 +9,10 @@ class App extends Component {
         super();
         this.state = {
             id: "test",
-            radius: 500
+            radius: 500,
+            ntrees: 2000,
+            nforests: 4,
+            height: 8
         };
         this.setProps = this.setProps.bind(this);
     }

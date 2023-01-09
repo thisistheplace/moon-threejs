@@ -13,7 +13,7 @@ const Model = (props) => {
         <>
             <Moon {...{radius: props.radius}}/>
             <Sun {...{radius: props.radius}}/>
-            <Forest {...{radius: props.radius}}/>
+            <Forest {...props}/>
         </>
     )
 }
@@ -23,7 +23,6 @@ function MoonThreejs(props) {
         <div id={props.id} style={{"height":"100%", "width":"100%"}}>
             <Canvas shadows style={{'background':'white'}} camera={{position: [2000, 0, 2000], fov:80, aspect:window.innerWidth / window.innerHeight, near: 200, far: 6000}}>
                 <OrbitControls/>
-                <axesHelper/>
                 <Suspense fallback={null}>
                     <Model {...props}/>
                 </Suspense>

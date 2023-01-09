@@ -1,6 +1,6 @@
 {
   "name": "moon_threejs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Threejs rendering of the moon",
 "repository": {
     "type": "git",
