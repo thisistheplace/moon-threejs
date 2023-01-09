@@ -1,9 +1,9 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
 #' @export
-moonThreejs <- function(id=NULL, radius=NULL) {
+moonThreejs <- function(id=NULL, height=NULL, nforests=NULL, ntrees=NULL, radius=NULL) {
     
-    props <- list(id=id, radius=radius)
+    props <- list(id=id, height=height, nforests=nforests, ntrees=ntrees, radius=radius)
     if (length(props) > 0) {
         props <- props[!vapply(props, is.null, logical(1))]
     }
@@ -11,7 +11,7 @@ moonThreejs <- function(id=NULL, radius=NULL) {
         props = props,
         type = 'MoonThreejs',
         namespace = 'moon_threejs',
-        propNames = c('id', 'radius'),
+        propNames = c('id', 'height', 'nforests', 'ntrees', 'radius'),
         package = 'moonThreejs'
         )
 

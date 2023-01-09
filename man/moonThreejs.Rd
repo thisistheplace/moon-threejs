@@ -10,11 +10,18 @@
 }
 
 \usage{
-moonThreejs(id=NULL, radius=NULL)
+moonThreejs(id=NULL, height=NULL, nforests=NULL, ntrees=NULL,
+radius=NULL)
 }
 
 \arguments{
 \item{id}{Character. }
+
+\item{height}{Numeric. }
+
+\item{nforests}{Numeric. }
+
+\item{ntrees}{Numeric. }
 
 \item{radius}{Numeric. }
 }
