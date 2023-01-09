@@ -1,8 +1,5 @@
 import React, {useRef, useEffect, useState, createRef} from 'react'
-import {extend, useFrame} from '@react-three/fiber'
-import * as THREE from 'three'
-
-extend({THREE})
+import {useFrame} from '@react-three/fiber'
 
 const Sun = (props) => {
   const ref = useRef()
@@ -20,7 +17,6 @@ const Sun = (props) => {
     // set position so "top down" is pointing at the origin
     refLight.current.applyMatrix4(refSun.current.matrixWorld)
     refLight.current.position.set( 0, 0, radius * 3 ).normalize()
-    // refLight.current.target = new THREE.Vector3(0, 0, 0)
 
     // Apply to sun and light group
     ref.current.position.set(0, 0, 0)

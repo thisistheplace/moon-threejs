@@ -2,7 +2,7 @@ import {extend} from '@react-three/fiber'
 import * as THREE from 'three'
 import * as BufferGeometryUtils from 'three/examples/jsm/utils/BufferGeometryUtils'
 
-// extend({THREE})
+extend({THREE})
 
 const VertexShader = `precision highp float;
 uniform mat4 modelViewMatrix;
