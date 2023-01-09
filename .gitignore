@@ -280,3 +280,8 @@ Manifest.toml
 JuliaManifest.toml
 
 R/
+
+# build output
+moon_threejs
+deps
+inst
