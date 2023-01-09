@@ -33,11 +33,17 @@ function MoonThreejs(props) {
 }
 
 MoonThreejs.defaultProps = {
+    height: 8,
+    ntrees: 1000,
+    nforests: 3
 };
 
 MoonThreejs.propTypes = {
     id: PropTypes.string.isRequired,
-    radius: PropTypes.number.isRequired
+    radius: PropTypes.number.isRequired,
+    height: PropTypes.number,
+    ntrees: PropTypes.number,
+    nforests: PropTypes.number
 };
 
 export default MoonThreejs;
